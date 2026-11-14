@@ -4,147 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My Game Developer Portfolio featuring games made with Godot 4.">
-    <title>My Game Developer Portfolio</title>
+    <title>Home | My Game Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>My Game Developer Portfolio</h1>
+<header>
+    <h1>My Game Developer Portfolio</h1>
+    <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
-        <nav aria-label="Main navigation">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home" class="hero">
-            <h2>Welcome to My Game Developer Portfolio!</h2>
-            <p>
-                Explore the games I've created and follow my
-                journey as I learn game development, programming,
-                and game design.
-            </p>
-            <a href="#projects" class="button">View My Projects</a>
-        </section>
-
-        <section id="about" class="about-section">
-            <div class="about-title">
-                <h2>About Me</h2>
-            </div>
-
-            <div class="about-text">
-                <h3>My Game Development Journey</h3>
-                <p>
-                    I am an aspiring game developer with an interest
-                    in creating games, programming, and designing
-                    interesting worlds and characters.
-                </p>
-                <p>
-                    I have been learning to create games using
-                    Godot 4, working with both 2D and 3D projects.
-                    Each game has helped me develop new skills
-                    in coding, animation, physics, and game design.
-                </p>
-
-                <h3>My Skills</h3>
-                <div class="skills">
-                    <span>Godot 4</span>
-                    <span>GDScript</span>
-                    <span>2D Game Design</span>
-                    <span>3D Game Design</span>
-                    <span>HTML &amp; CSS</span>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects-section">
-            <h2>My Game Projects</h2>
-            <p class="section-intro">
-                Here are some of the games I've created
-                during my game development journey.
-            </p>
-
-            <div class="project-container">
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <h3>Magic Wolf Game</h3>
-                    </div>
-
-                    <p>
-                        My third game, featuring my own
-                        character creations. Play as a magical
-                        wolf, fight shadow foxes, and defeat
-                        a corrupted boss to restore the forest.
-                    </p>
-
-                    <p class="project-type">
-                        2D Platformer | Godot 4
-                    </p>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <h3>3D Flying Game</h3>
-                    </div>
-
-                    <p>
-                        My second game, created as part of my
-                        learning experience. Control an airplane
-                        flying through a city, collect rings,
-                        and survive as the speed increases.
-                    </p>
-
-                    <p class="project-type">
-                        3D Flying Game | Godot 4
-                    </p>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-image">
-                        <h3>Golf Game</h3>
-                    </div>
-
-                    <p>
-                        My first game development learning
-                        experience. Progress through different
-                        golf holes and try to get the ball
-                        into each hole using as few
-                        moves as possible.
-                    </p>
-
-                    <p class="project-type">
-                        Physics-Based Game | Godot 4
-                    </p>
-                </article>
-
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <h2>Contact Me</h2>
-
-            <p>
-                Interested in my game development projects?
-                You can explore my work on GitHub.
-            </p>
-
-            <a href="#" class="button">Visit My GitHub</a>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 My Game Developer Portfolio</p>
+<main>
+    <section class="hero">
+        <h2>Welcome to My Game Developer Portfolio!</h2>
         <p>
-            Created with HTML, CSS, and a passion
-            for game development.
+            Welcome to my world of game development!
+            Explore the games I've created, discover the skills
+            I've learned, and follow my journey as an aspiring
+            game developer.
         </p>
-    </footer>
+        <a href="projects.html" class="button">
+            Explore My Games
+        </a>
+    </section>
+
+    <section class="page-content">
+        <h2>Explore My Portfolio</h2>
+        <p class="section-intro">
+            Select a section below to learn more.
+        </p>
+
+        <div class="home-grid">
+            <article class="home-card">
+                <h3>About Me</h3>
+                <p>
+                    Learn about my interests, background,
+                    and game development journey.
+                </p>
+                <a href="about.html" class="button">
+                    About Me
+                </a>
+            </article>
+
+            <article class="home-card">
+                <h3>My Projects</h3>
+                <p>
+                    Explore my Magic Wolf platformer,
+                    3D Flying Game, and Golf Game.
+                </p>
+                <a href="projects.html" class="button">
+                    View Projects
+                </a>
+            </article>
+
+            <article class="home-card">
+                <h3>Skills & Experience</h3>
+                <p>
+                    Discover the programming tools,
+                    game engines, and design techniques
+                    I'm learning.
+                </p>
+                <a href="skills.html" class="button">
+                    View Skills
+                </a>
+            </article>
+
+            <article class="home-card">
+                <h3>Contact Me</h3>
+                <p>
+                    Find my GitHub profile and learn
+                    how to connect with me.
+                </p>
+                <a href="contact.html" class="button">
+                    Contact
+                </a>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 My Game Developer Portfolio</p>
+    <p>Created with HTML, CSS, and a passion for gaming.</p>
+</footer>
 
 </body>
 </html>
