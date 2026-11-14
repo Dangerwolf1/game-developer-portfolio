@@ -303,3 +303,146 @@ footer {
         scroll-behavior: auto;
     }
 }
+/* Shared Page Styling */
+
+.page-content {
+    padding: 70px 6%;
+    text-align: center;
+    min-height: 65vh;
+}
+
+.page-content > h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    color: #06123d;
+    margin-bottom: 20px;
+}
+
+/* Home Navigation Cards */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.home-card {
+    background: linear-gradient(120deg, #090d31, #3039c8);
+    color: white;
+    padding: 35px 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.home-card h3 {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    margin-top: 0;
+}
+
+.home-card p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.home-card .button {
+    margin-top: 15px;
+    background: #5cb3f5;
+    color: #06123d;
+}
+
+.home-card .button:hover,
+.home-card .button:focus-visible {
+    background: white;
+}
+
+/* About Page */
+
+.page-content .about-section {
+    text-align: left;
+}
+
+/* Skills Page */
+
+.learning-section {
+    max-width: 850px;
+    margin: 60px auto 20px;
+    text-align: center;
+}
+
+.learning-section h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+}
+
+.learning-section p {
+    font-size: 18px;
+}
+
+/* Contact Page */
+
+.contact-card {
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 35px;
+    background: linear-gradient(120deg, #090d31, #3039c8);
+    color: white;
+    border-radius: 20px;
+}
+
+.contact-card h3 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+}
+
+.contact-card p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+/* Current Page Navigation */
+
+nav a[aria-current="page"] {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+/* Tablet Layout */
+
+@media (max-width: 900px) {
+    .home-grid {
+        gap: 20px;
+    }
+
+    .home-card {
+        padding: 25px 18px;
+    }
+}
+
+/* Mobile Layout */
+
+@media (max-width: 650px) {
+    .page-content {
+        padding: 40px 20px;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .home-card h3 {
+        font-size: 23px;
+    }
+
+    .contact-card {
+        padding: 25px 18px;
+    }
+
+    .learning-section {
+        margin-top: 40px;
+    }
+}
