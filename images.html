@@ -1,147 +1,275 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Screenshots and original character art from my Godot game projects.">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-  <title>Images | My Game Developer Portfolio</title>
+    <meta name="description"
+          content="Screenshots and original character art from my Godot game development projects.">
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="portfolio-updates.css">
+    <title>Images | My Game Developer Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio-updates.css">
+
+    <style>
+        /* IMAGE GALLERY PAGE */
+
+        .gallery-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .gallery-heading h2 {
+            color: #78dfff;
+            font-size: 2rem;
+        }
+
+        .gallery-heading p {
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* GALLERY CATEGORIES */
+
+        .category-heading {
+            color: #78dfff;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        /* IMAGE GRID */
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .gallery-grid figure {
+            background: #173743;
+            border: 1px solid #315f73;
+            border-radius: 12px;
+            margin: 0;
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        .gallery-grid img {
+            display: block;
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+            background: #091b26;
+            border-radius: 6px;
+        }
+
+        .gallery-grid figcaption {
+            padding: 12px;
+            text-align: center;
+            color: #eefaff;
+            font-weight: bold;
+        }
+
+        /* MOBILE RESPONSIVENESS */
+
+        @media (max-width: 700px) {
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid img {
+                height: auto;
+                max-height: 350px;
+            }
+
+            .gallery-heading h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
 </head>
 
 <body class="portfolio-update">
 
-  <a class="skip-link" href="#main-content">
-    Skip to content
-  </a>
+    <!-- ACCESSIBILITY SKIP LINK -->
+    <a class="skip-link" href="#main-content">
+        Skip to content
+    </a>
 
-<!-- WEBSITE HEADER -->
-<header class="portfolio-header">
+    <!-- WEBSITE HEADER -->
+    <header class="portfolio-header">
 
-    <div class="site-brand">
-        <img
-            src="images/portfolio-logo.png"
-            alt="Moonlit wolf and crystal logo"
-            class="site-logo"
-            width="64"
-            height="64">
+        <div class="site-brand">
 
-        <h1>My Game Developer Portfolio</h1>
-    </div>
+            <img
+                src="images/portfolio-logo.png"
+                alt="Moonlit wolf crystal emblem"
+                class="site-logo"
+                width="64"
+                height="64">
 
-    <nav aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="images.html" aria-current="page">Images</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+            <h1>My Game Developer Portfolio</h1>
 
-  <main id="main-content" class="portfolio-main">
+        </div>
 
-    <!-- GALLERY INTRODUCTION -->
-    <section class="gallery-heading" aria-labelledby="gallery-heading">
+        <!-- NAVIGATION -->
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="images.html"
+               aria-current="page">Images</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-      <h2 id="gallery-heading">
-        My Game Art &amp; Screenshots
-      </h2>
+    </header>
 
-      <p>
-        Here are screenshots of my games and some
-        of the fantasy artwork I've used while
-        developing them.
-      </p>
+    <!-- MAIN CONTENT -->
+    <main id="main-content" class="portfolio-main">
 
-    </section>
+        <!-- PAGE INTRODUCTION -->
+        <section class="gallery-heading"
+                 aria-labelledby="gallery-heading">
 
-    <!-- MAGIC WOLF GALLERY -->
-    <section aria-labelledby="wolf-gallery">
+            <h2 id="gallery-heading">
+                My Game Art &amp; Screenshots
+            </h2>
 
-      <h2 id="wolf-gallery" class="category-heading">
-        Magic Wolf Game
-      </h2>
+            <p>
+                Here are screenshots of my games and
+                some of the fantasy artwork I've used
+                while developing them.
+                These images showcase my progress
+                in game development using Godot.
+            </p>
 
-      <div class="gallery-grid">
+        </section>
 
-        <figure>
-          <img
-            src="images/wolf-portal.png"
-            alt="Bright violet portal swirling within an ancient tree surrounded by blue crystals"
-            loading="lazy">
+        <!-- MAGIC WOLF GAME -->
+        <section aria-labelledby="wolf-gallery">
 
-          <figcaption>Magical Forest Portal</figcaption>
-        </figure>
+            <h2 id="wolf-gallery"
+                class="category-heading">
+                Magic Wolf Game
+            </h2>
 
-        <figure>
-          <img
-            src="images/wolf-shop.png"
-            alt="Godot editor showing a cute wolf shop character inside an ornate blue-crystal frame"
-            loading="lazy">
+            <div class="gallery-grid">
 
-          <figcaption>Fantasy Shop Design in Godot</figcaption>
-        </figure>
+                <!-- MAGICAL PORTAL -->
+                <figure>
 
-        <figure>
-          <img
-            src="images/wolf-controls.png"
-            alt="Purple forest game controls screen showing movement, jump, attack, and crouch instructions"
-            loading="lazy">
+                    <img
+                        src="images/wolf-portal.png"
+                        alt="Bright purple magical portal inside an ancient tree surrounded by glowing blue crystals"
+                        loading="lazy">
 
-          <figcaption>Game Controls Screen</figcaption>
-        </figure>
+                    <figcaption>
+                        Magical Forest Portal
+                    </figcaption>
 
-        <figure>
-          <img
-            src="images/wolf-character.png"
-            alt="Gray and white wolf character with blue eyes, glowing blue markings, and a crystal pendant"
-            loading="lazy">
+                </figure>
 
-          <figcaption>Original Wolf Character</figcaption>
-        </figure>
+                <!-- SHOP DESIGN -->
+                <figure>
 
-      </div>
+                    <img
+                        src="images/wolf-shop.png"
+                        alt="Godot editor showing a fantasy wolf shop character surrounded by an ornate blue crystal frame"
+                        loading="lazy">
 
-    </section>
+                    <figcaption>
+                        Fantasy Shop Design in Godot
+                    </figcaption>
 
-    <!-- OTHER GAMES -->
-    <section aria-labelledby="other-gallery">
+                </figure>
 
-      <h2 id="other-gallery" class="category-heading">
-        Other Game Projects
-      </h2>
+                <!-- CONTROLS SCREEN -->
+                <figure>
 
-      <div class="gallery-grid">
+                    <img
+                        src="images/wolf-controls.png"
+                        alt="Purple magical forest background with game instructions for movement, jumping, attacking, and crouching"
+                        loading="lazy">
 
-        <figure>
-          <img
-            src="images/flying-game.png"
-            alt="Low-poly airplane flying toward rings between rows of tall city buildings"
-            loading="lazy">
+                    <figcaption>
+                        Game Controls Screen
+                    </figcaption>
 
-          <figcaption>3D Flying Game</figcaption>
-        </figure>
+                </figure>
 
-        <figure>
-          <img
-            src="images/golf-game.png"
-            alt="3D mini golf course showing the ball, green fairway, aiming arrow, and shot counter"
-            loading="lazy">
+                <!-- WOLF CHARACTER -->
+                <figure>
 
-          <figcaption>Mini Golf Game</figcaption>
-        </figure>
+                    <img
+                        src="images/wolf-character.png"
+                        alt="Original gray and white fantasy wolf character with blue eyes, glowing blue markings, and a crystal pendant"
+                        loading="lazy">
 
-      </div>
+                    <figcaption>
+                        Original Wolf Character
+                    </figcaption>
 
-    </section>
+                </figure>
 
-  </main>
+            </div>
 
-  <footer class="portfolio-footer">
-    <p>&copy; 2026 My Game Developer Portfolio</p>
-  </footer>
+        </section>
+
+        <!-- OTHER GAME PROJECTS -->
+        <section aria-labelledby="other-gallery">
+
+            <h2 id="other-gallery"
+                class="category-heading">
+                Other Game Projects
+            </h2>
+
+            <div class="gallery-grid">
+
+                <!-- FLYING GAME -->
+                <figure>
+
+                    <img
+                        src="images/flying-game.png"
+                        alt="Small airplane flying through a city between tall buildings toward collectible rings"
+                        loading="lazy">
+
+                    <figcaption>
+                        3D Flying Game
+                    </figcaption>
+
+                </figure>
+
+                <!-- GOLF GAME -->
+                <figure>
+
+                    <img
+                        src="images/golf-game.png"
+                        alt="3D mini golf course showing a white golf ball, aiming arrow, power meter, and shot counter"
+                        loading="lazy">
+
+                    <figcaption>
+                        Mini Golf Game
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- WEBSITE FOOTER -->
+    <footer class="portfolio-footer">
+        <p>&copy; 2026 My Game Developer Portfolio</p>
+    </footer>
 
 </body>
 </html>
