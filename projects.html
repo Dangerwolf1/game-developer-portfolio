@@ -4,155 +4,382 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore my Godot 4 game development projects.">
+
+    <meta name="description"
+          content="Explore my Godot game development projects, including a magical wolf platformer, a 3D flying game, and a mini golf game.">
+
     <title>Projects | My Game Developer Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio-updates.css">
+
+    <style>
+        /* Projects Page */
+
+        .projects-intro {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .projects-intro h2 {
+            color: #78dfff;
+            font-size: 2rem;
+        }
+
+        .projects-intro p {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .project-card {
+            background: #173743;
+            border: 1px solid #315f73;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .project-card img {
+            display: block;
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            padding: 20px;
+        }
+
+        .project-content h3 {
+            color: #8de7ff;
+            margin-top: 0;
+        }
+
+        .project-content p {
+            line-height: 1.7;
+        }
+
+        .project-content a {
+            font-weight: bold;
+            color: #8de7ff;
+        }
+
+        /* Game Comparison Table */
+
+        .comparison {
+            margin-top: 55px;
+        }
+
+        .comparison h2 {
+            text-align: center;
+            color: #78dfff;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .comparison table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #173743;
+        }
+
+        .comparison caption {
+            padding: 12px;
+            color: #eefaff;
+        }
+
+        .comparison th,
+        .comparison td {
+            padding: 15px;
+            border: 1px solid #52758a;
+            text-align: left;
+        }
+
+        .comparison th {
+            background: #23517b;
+            color: #ffffff;
+        }
+
+        .comparison tr:nth-child(even) {
+            background: #214553;
+        }
+
+        /* Asset Credits */
+
+        .credits {
+            margin-top: 50px;
+            padding: 25px;
+            background: #173743;
+            border: 1px solid #315f73;
+            border-radius: 12px;
+        }
+
+        .credits h2 {
+            color: #78dfff;
+        }
+
+        .credits p {
+            line-height: 1.7;
+        }
+
+        /* Mobile Layout */
+
+        @media (max-width: 850px) {
+            .project-list {
+                grid-template-columns: 1fr;
+            }
+
+            .project-card img {
+                height: auto;
+                max-height: 350px;
+                object-fit: contain;
+                background: #091b26;
+            }
+        }
+    </style>
 </head>
-<body>
 
-<header class="site-header">
-    <h1>My Game Developer Portfolio</h1>
+<body class="portfolio-update">
 
-    <nav aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html" aria-current="page">Projects</a>
-        <a href="images.html">Images</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+    <a class="skip-link" href="#main-content">
+        Skip to content
+    </a>
 
-<main>
+    <!-- HEADER -->
+    <header class="portfolio-header">
 
-    <section class="projects-section">
+        <h1>My Game Developer Portfolio</h1>
 
-        <h2>My Game Projects</h2>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" aria-current="page">Projects</a>
+            <a href="images.html">Images</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-        <p class="section-intro">
-            These are some of the games I've worked on
-            while learning game development with Godot 4.
-        </p>
+    </header>
 
-        <div class="project-container">
+    <!-- MAIN CONTENT -->
+    <main id="main-content" class="portfolio-main">
 
-            <article class="project-card">
+        <section class="projects-intro">
+            <h2>Welcome to My Projects</h2>
 
-                <div class="project-image">
-                    <h3>Magic Wolf Game</h3>
-                </div>
+            <p>
+                These are three games I created while
+                learning game development with Godot.
+                Each project helped me develop different
+                programming and design skills.
+            </p>
+        </section>
 
-                <h3>Magical Forest Adventure</h3>
+        <!-- THREE GAME PROJECTS -->
+        <section aria-label="My game projects">
 
-                <p>
-                    My third game, featuring my own original
-                    character creations.
-                </p>
+            <div class="project-list">
 
-                <p>
-                    Players control a magical wolf who
-                    explores a forest, battles shadow foxes,
-                    and faces a powerful corrupted stag
-                    boss to restore peace to the forest.
-                </p>
+                <!-- MAGIC WOLF -->
+                <article class="project-card">
 
-                <p>
-                    The game includes character animations,
-                    magical attacks, enemy AI, platforming,
-                    and a boss battle.
-                </p>
+                    <img
+                        src="images/wolf-portal.png"
+                        alt="A magical purple portal inside an ancient tree surrounded by glowing crystals">
 
-                <p class="project-type">
-                    2D Platformer | Godot 4
-                </p>
+                    <div class="project-content">
+                        <h3>Magic Wolf Game</h3>
 
-                <a href="images.html#wolf-gallery" class="button">
-                    View Screenshots
-                </a>
+                        <p>
+                            This is my third game and the one
+                            where I had the opportunity to
+                            create my own fantasy characters
+                            and gameplay ideas.
+                        </p>
 
-            </article>
+                        <p>
+                            Players control a magical wolf
+                            exploring a corrupted forest.
+                            They must collect crystals,
+                            fight shadow foxes, and defeat
+                            the Corrupted Stag boss.
+                        </p>
 
-            <article class="project-card">
+                        <p>
+                            I practiced character animations,
+                            enemy behavior, combat mechanics,
+                            level design, and boss battles.
+                        </p>
 
-                <div class="project-image">
-                    <h3>3D Flying Game</h3>
-                </div>
+                        <a href="images.html">
+                            View game artwork
+                        </a>
+                    </div>
+                </article>
 
-                <h3>Endless Flight Challenge</h3>
+                <!-- 3D FLYING -->
+                <article class="project-card">
 
-                <p>
-                    My second game, created as part
-                    of my game development learning
-                    experience.
-                </p>
+                    <img
+                        src="images/flying-game.png"
+                        alt="A small airplane flying through a city between tall buildings toward collectible rings">
 
-                <p>
-                    Players control an airplane flying
-                    through a city while collecting rings
-                    and avoiding obstacles.
-                </p>
+                    <div class="project-content">
+                        <h3>3D Flying Game</h3>
 
-                <p>
-                    As the flight continues, the airplane
-                    increases in speed, making the game
-                    more challenging.
-                </p>
+                        <p>
+                            My second project was a 3D flying
+                            game developed as part of my
+                            learning experience.
+                        </p>
 
-                <p class="project-type">
-                    3D Flying Game | Godot 4
-                </p>
+                        <p>
+                            The player flies an airplane
+                            through a city, collecting rings
+                            and avoiding buildings and other
+                            obstacles as the speed increases.
+                        </p>
 
-                <a href="images.html#flying-gallery" class="button">
-                    View Screenshots
-                </a>
+                        <p>
+                            This project helped me learn
+                            about 3D movement, obstacles,
+                            procedural environments,
+                            and distance tracking.
+                        </p>
 
-            </article>
+                        <a href="images.html">
+                            View game screenshot
+                        </a>
+                    </div>
+                </article>
 
-            <article class="project-card">
+                <!-- MINI GOLF -->
+                <article class="project-card">
 
-                <div class="project-image">
-                    <h3>Golf Game</h3>
-                </div>
+                    <img
+                        src="images/golf-game.png"
+                        alt="A colorful 3D mini golf course with a white ball, aiming arrow, and shot counter">
 
-                <h3>Mini Golf Challenge</h3>
+                    <div class="project-content">
+                        <h3>Mini Golf Game</h3>
 
-                <p>
-                    My first game development learning
-                    experience.
-                </p>
+                        <p>
+                            This was one of my first projects
+                            while learning game development.
+                        </p>
 
-                <p>
-                    Players progress through different
-                    golf holes and try to complete each
-                    course using as few moves as possible.
-                </p>
+                        <p>
+                            Players progress through
+                            different golf holes and try
+                            to get the ball into the hole
+                            using as few shots as possible.
+                        </p>
 
-                <p>
-                    This project helped me learn
-                    more about game physics,
-                    player interaction, and
-                    level progression.
-                </p>
+                        <p>
+                            I practiced physics, player
+                            controls, power adjustment,
+                            collision detection, and
+                            switching between levels.
+                        </p>
 
-                <p class="project-type">
-                    Physics-Based Game | Godot 4
-                </p>
+                        <a href="images.html">
+                            View game screenshot
+                        </a>
+                    </div>
+                </article>
 
-                <a href="images.html#golf-gallery" class="button">
-                    View Screenshots
-                </a>
+            </div>
+        </section>
 
-            </article>
+        <!-- HTML TABLE REQUIREMENT -->
+        <section class="comparison"
+                 aria-labelledby="comparison-heading">
 
-        </div>
+            <h2 id="comparison-heading">
+                Game Project Comparison
+            </h2>
 
-    </section>
+            <div class="table-container">
 
-</main>
+                <table>
+                    <caption>
+                        Overview of my three Godot game projects
+                    </caption>
 
-<footer>
-    <p>&copy; 2026 My Game Developer Portfolio</p>
-    <p>My Game Development Projects</p>
-</footer>
+                    <thead>
+                        <tr>
+                            <th scope="col">Game</th>
+                            <th scope="col">Game Type</th>
+                            <th scope="col">Engine</th>
+                            <th scope="col">Project Order</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Mini Golf</td>
+                            <td>3D Sports / Physics</td>
+                            <td>Godot</td>
+                            <td>First</td>
+                        </tr>
+
+                        <tr>
+                            <td>3D Flying</td>
+                            <td>3D Flying</td>
+                            <td>Godot</td>
+                            <td>Second</td>
+                        </tr>
+
+                        <tr>
+                            <td>Magic Wolf</td>
+                            <td>2D Fantasy Platformer</td>
+                            <td>Godot</td>
+                            <td>Third</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+        </section>
+
+        <!-- CREDITS -->
+        <section class="credits"
+                 aria-labelledby="credits-heading">
+
+            <h2 id="credits-heading">
+                Game Assets &amp; Credits
+            </h2>
+
+            <p>
+                These projects were created as part of
+                my game development learning experience.
+                Some games followed instructional
+                materials, while others included
+                my own character designs and
+                gameplay modifications.
+            </p>
+
+            <p>
+                Any third-party music, sound effects,
+                artwork, or other assets will be credited
+                here with their creators and sources.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="portfolio-footer">
+        <p>&copy; 2026 My Game Developer Portfolio</p>
+    </footer>
 
 </body>
 </html>
