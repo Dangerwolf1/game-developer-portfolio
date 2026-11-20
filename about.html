@@ -1,109 +1,250 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about my game development journey and interests.">
+
+    <meta name="description"
+          content="Learn about my game development journey, my Godot projects, and the tools I use to create games.">
+
     <title>About Me | My Game Developer Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio-updates.css">
+
+    <style>
+        /* About Page Styling */
+
+        .about-page {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 40px 24px 60px;
+        }
+
+        .about-intro {
+            background: #173743;
+            border: 1px solid #315f73;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 35px;
+        }
+
+        .about-intro h2,
+        .learning-section h2,
+        .resources h2 {
+            color: #78dfff;
+            text-align: center;
+        }
+
+        .about-intro p,
+        .learning-section p {
+            color: #eefaff;
+            line-height: 1.8;
+        }
+
+        .learning-section {
+            margin-bottom: 40px;
+        }
+
+        .resources {
+            background: #173743;
+            border: 1px solid #315f73;
+            border-radius: 12px;
+            padding: 30px;
+        }
+
+        .resources p {
+            text-align: center;
+        }
+
+        .resources ul {
+            max-width: 700px;
+            margin: 20px auto;
+            padding-left: 30px;
+            line-height: 2;
+        }
+
+        .resources li {
+            margin-bottom: 15px;
+        }
+
+        .resources a {
+            color: #8de7ff;
+            font-weight: bold;
+        }
+
+        .resources a:hover {
+            color: #ffffff;
+        }
+
+        .resources a:focus-visible {
+            outline: 3px solid #ffffff;
+            outline-offset: 4px;
+        }
+
+        @media (max-width: 640px) {
+            .about-page {
+                padding: 24px 16px;
+            }
+
+            .about-intro,
+            .resources {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
-<body>
 
-<header class="site-header">
-    <h1>My Game Developer Portfolio</h1>
+<body class="portfolio-update">
 
-    <nav aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html" aria-current="page">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="images.html">Images</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+    <!-- ACCESSIBILITY SKIP LINK -->
+    <a class="skip-link" href="#main-content">
+        Skip to content
+    </a>
 
-<main>
+    <!-- WEBSITE HEADER -->
+    <header class="portfolio-header">
 
-    <section class="page-content">
-        <h2>About Me</h2>
+        <h1>My Game Developer Portfolio</h1>
 
-        <div class="about-section">
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html" aria-current="page">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="images.html">Images</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-            <div class="about-title">
-                <h2>My Journey</h2>
-            </div>
+    </header>
 
-            <div class="about-text">
+    <!-- MAIN PAGE CONTENT -->
+    <main id="main-content" class="about-page">
 
-                <h3>Welcome!</h3>
+        <!-- ABOUT ME -->
+        <section class="about-intro"
+                 aria-labelledby="about-heading">
 
-                <p>
-                    I'm an aspiring game developer who enjoys
-                    programming, designing characters, and
-                    creating interactive game worlds.
-                </p>
+            <h2 id="about-heading">About Me</h2>
 
-                <p>
-                    My interest in game development comes from
-                    enjoying games that encourage exploration,
-                    survival, building, creativity, and storytelling.
-                </p>
+            <p>
+                Welcome to my Game Developer Portfolio!
+                I am a student who enjoys learning about
+                game development, programming, and creating
+                fantasy worlds.
+            </p>
 
-                <h3>Learning Game Development</h3>
+            <p>
+                I enjoy designing characters, creating game
+                environments, and learning how different game
+                mechanics work together.
+                My goal is to continue improving my skills
+                while developing games that other people
+                can enjoy.
+            </p>
 
-                <p>
-                    I've been learning to create games using
-                    Godot 4, working with both 2D and 3D projects.
-                </p>
+        </section>
 
-                <p>
-                    Throughout my projects, I've practiced
-                    character movement, animations, game physics,
-                    enemy behavior, level design, and combat systems.
-                </p>
+        <!-- MY DEVELOPMENT JOURNEY -->
+        <section class="learning-section"
+                 aria-labelledby="journey-heading">
 
-                <h3>My Favorite Part of Game Development</h3>
+            <h2 id="journey-heading">
+                My Game Development Journey
+            </h2>
 
-                <p>
-                    One of my favorite parts of creating games
-                    is bringing original characters and
-                    environments to life.
-                </p>
+            <p>
+                I started learning game development by
+                following tutorials and completing smaller
+                projects. Each game has helped me learn
+                something different about programming,
+                physics, level design, and game mechanics.
+            </p>
 
-                <p>
-                    I enjoy creating fantasy creatures,
-                    designing interesting worlds, and
-                    thinking of new ways players can
-                    interact with those worlds.
-                </p>
+            <p>
+                My first project was a mini golf game,
+                where I practiced controlling the ball,
+                using physics, and progressing through
+                different golf holes.
+            </p>
 
-                <h3>My Future Goals</h3>
+            <p>
+                My second project was a 3D flying game.
+                I learned how to work with a 3D environment,
+                create obstacles, and track the player's
+                distance and speed.
+            </p>
 
-                <p>
-                    My goal is to continue improving my
-                    programming and game design skills
-                    so I can eventually create larger
-                    original games.
-                </p>
+            <p>
+                My third project was a fantasy wolf
+                platformer. This project allowed me to
+                work more creatively by designing my own
+                wolf character, adding enemies, building
+                levels, and creating a boss battle.
+            </p>
 
-                <p>
-                    I'm especially interested in games
-                    involving exploration, survival,
-                    creature collecting, and immersive
-                    storytelling.
-                </p>
+            <p>
+                As I continue learning, I hope to create
+                larger and more detailed games while
+                developing my programming and design skills.
+            </p>
 
-            </div>
-        </div>
+        </section>
 
-    </section>
+        <!-- TOOLS AND EXTERNAL LINKS -->
+        <section class="resources"
+                 aria-labelledby="resources-heading">
 
-</main>
+            <h2 id="resources-heading">
+                Tools &amp; Resources
+            </h2>
 
-<footer>
-    <p>&copy; 2026 My Game Developer Portfolio</p>
-    <p>My Game Development Journey</p>
-</footer>
+            <p>
+                These are some of the tools I have used
+                or am learning while developing games
+                and websites.
+            </p>
+
+            <ul>
+                <li>
+                    <a href="https://godotengine.org/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Godot Engine
+                    </a>
+                    - The game engine I use to create
+                    my projects.
+                </li>
+
+                <li>
+                    <a href="https://www.blender.org/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Blender
+                    </a>
+                    - Software for creating 3D models,
+                    characters, and animations.
+                </li>
+
+                <li>
+                    <a href="https://code.visualstudio.com/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Visual Studio Code
+                    </a>
+                    - A code editor I have used while
+                    learning website development.
+                </li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <!-- WEBSITE FOOTER -->
+    <footer class="portfolio-footer">
+        <p>&copy; 2026 My Game Developer Portfolio</p>
+    </footer>
 
 </body>
 </html>
