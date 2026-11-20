@@ -4,97 +4,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact information and GitHub profile for my game developer portfolio.">
+
+    <meta name="description"
+          content="Contact page for my game development portfolio.">
+
     <title>Contact | My Game Developer Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio-updates.css">
+
+    <style>
+        /* Contact Page */
+
+        .contact-page {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 24px 60px;
+        }
+
+        .contact-intro {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .contact-intro h2 {
+            color: #78dfff;
+            font-size: 2rem;
+        }
+
+        .contact-intro p {
+            line-height: 1.7;
+        }
+
+        .contact-box {
+            background: #173743;
+            border: 1px solid #315f73;
+            border-radius: 12px;
+            padding: 30px;
+        }
+
+        .contact-box h3 {
+            color: #78dfff;
+            text-align: center;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            color: #eefaff;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #52758a;
+            border-radius: 6px;
+            background: #eefaff;
+            color: #102631;
+            font: inherit;
+            box-sizing: border-box;
+        }
+
+        .contact-form textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .contact-form input:focus-visible,
+        .contact-form textarea:focus-visible {
+            outline: 3px solid #78dfff;
+            outline-offset: 3px;
+        }
+
+        .contact-form button {
+            margin-top: 12px;
+            padding: 14px 20px;
+            background: #2359a6;
+            border: 1px solid #8de7ff;
+            border-radius: 6px;
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background: #3476cc;
+        }
+
+        .contact-form button:focus-visible {
+            outline: 3px solid #ffffff;
+            outline-offset: 4px;
+        }
+
+        .form-message {
+            margin-top: 18px;
+            padding: 15px;
+            border-radius: 6px;
+            background: #214553;
+            color: #ffffff;
+        }
+
+        .contact-note {
+            margin-top: 30px;
+            text-align: center;
+            color: #d5eaf4;
+        }
+
+        @media (max-width: 640px) {
+            .contact-page {
+                padding: 24px 16px;
+            }
+
+            .contact-box {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
-<body>
 
-<header class="site-header">
-    <h1>My Game Developer Portfolio</h1>
+<body class="portfolio-update">
 
-    <nav aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="images.html">Images</a>
-        <a href="contact.html" aria-current="page">Contact</a>
-    </nav>
-</header>
+    
+    <a class="skip-link" href="#main-content">
+        Skip to content
+    </a>
 
-<main>
+    <!-- HEADER -->
+    <header class="portfolio-header">
 
-    <section class="contact-section">
+        <h1>My Game Developer Portfolio</h1>
 
-        <h2>Contact Me</h2>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="images.html">Images</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
 
-        <p>
-            Thank you for visiting my
-            Game Developer Portfolio!
-        </p>
+    </header>
 
-        <p>
-            I'm continuing to learn game development
-            and build new projects using Godot 4.
-        </p>
+   
+    <main id="main-content" class="contact-page">
 
-        <p>
-            You can explore my programming work
-            and follow my progress through GitHub.
-        </p>
-
-        <div class="contact-card">
-
-            <h3>My GitHub Profile</h3>
+        <section class="contact-intro">
+            <h2>Contact Me</h2>
 
             <p>
-                Visit my GitHub profile to explore
-                my repositories, game development
-                projects, and portfolio website.
+                Thank you for visiting my game
+                development portfolio!
+                This page demonstrates an HTML contact
+                form using JavaScript validation.
             </p>
+        </section>
 
-            <a
-                href="https://github.com/Dangerwolf1"
-                class="button"
-                target="_blank"
-                rel="noopener noreferrer">
-                Visit My GitHub
-            </a>
+       
+        <section class="contact-box"
+                 aria-labelledby="form-heading">
 
-        </div>
+            <h3 id="form-heading">Contact Form</h3>
 
-        <div class="contact-card">
+            <form id="contactForm"
+                  class="contact-form">
 
-            <h3>My Portfolio Repository</h3>
+                <label for="visitorName">
+                    Your Name
+                </label>
 
-            <p>
-                View the HTML and CSS files
-                used to create this website.
-            </p>
+                <input
+                    type="text"
+                    id="visitorName"
+                    name="visitorName"
+                    autocomplete="name"
+                    maxlength="100"
+                    required>
 
-            <a
-                href="https://github.com/Dangerwolf1/game-developer-portfolio"
-                class="button"
-                target="_blank"
-                rel="noopener noreferrer">
-                View Repository
-            </a>
+                <label for="visitorEmail">
+                    Your Email
+                </label>
 
-        </div>
+                <input
+                    type="email"
+                    id="visitorEmail"
+                    name="visitorEmail"
+                    autocomplete="email"
+                    maxlength="254"
+                    required>
 
-        <p>
-            Thank you for supporting my
-            game development journey!
+                <label for="visitorMessage">
+                    Your Message
+                </label>
+
+                <textarea
+                    id="visitorMessage"
+                    name="visitorMessage"
+                    maxlength="2000"
+                    required></textarea>
+
+                <button type="submit">
+                    Test Form
+                </button>
+
+            </form>
+
+            <p id="formResult"
+               class="form-message"
+               role="status"
+               aria-live="polite"
+               hidden></p>
+
+        </section>
+
+        <p class="contact-note">
+            This is a demonstration form for my
+            web development project.
+            No information is sent or stored.
+            Please do not enter sensitive information.
         </p>
 
-    </section>
+    </main>
 
-</main>
+    <!-- FOOTER -->
+    <footer class="portfolio-footer">
+        <p>&copy; 2026 My Game Developer Portfolio</p>
+    </footer>
 
-<footer>
-    <p>&copy; 2026 My Game Developer Portfolio</p>
-    <p>Created with HTML and CSS.</p>
-</footer>
+    
+    <script>
+        const contactForm =
+            document.getElementById("contactForm");
+
+        const formResult =
+            document.getElementById("formResult");
+
+        contactForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            if (!contactForm.checkValidity()) {
+                contactForm.reportValidity();
+                return;
+            }
+
+            const visitorName =
+                document.getElementById("visitorName").value.trim();
+
+            const visitorEmail =
+                document.getElementById("visitorEmail").value.trim();
+
+            const visitorMessage =
+                document.getElementById("visitorMessage").value.trim();
+
+            if (!visitorName || !visitorEmail || !visitorMessage) {
+                formResult.textContent =
+                    "Please complete all fields.";
+
+                formResult.hidden = false;
+                return;
+            }
+
+            formResult.textContent =
+                "Thank you, " + visitorName +
+                "! Your form entries passed validation. " +
+                "This is a demonstration, so your message was not sent.";
+
+            formResult.hidden = false;
+
+            contactForm.reset();
+        });
+    </script>
 
 </body>
 </html>
