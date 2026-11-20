@@ -1,12 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Contact page for my game development portfolio.">
+          content="Contact page for my game development portfolio, featuring a demonstration HTML contact form.">
 
     <title>Contact | My Game Developer Portfolio</title>
 
@@ -14,7 +16,7 @@
     <link rel="stylesheet" href="portfolio-updates.css">
 
     <style>
-        /* Contact Page */
+        /* CONTACT PAGE */
 
         .contact-page {
             max-width: 850px;
@@ -36,6 +38,8 @@
             line-height: 1.7;
         }
 
+        /* CONTACT FORM CONTAINER */
+
         .contact-box {
             background: #173743;
             border: 1px solid #315f73;
@@ -48,6 +52,8 @@
             text-align: center;
         }
 
+        
+
         .contact-form {
             display: flex;
             flex-direction: column;
@@ -55,18 +61,19 @@
         }
 
         .contact-form label {
-            font-weight: bold;
             color: #eefaff;
+            font-weight: bold;
         }
 
         .contact-form input,
         .contact-form textarea {
+            display: block;
             width: 100%;
             padding: 12px;
-            border: 2px solid #52758a;
-            border-radius: 6px;
             background: #eefaff;
             color: #102631;
+            border: 2px solid #52758a;
+            border-radius: 6px;
             font: inherit;
             box-sizing: border-box;
         }
@@ -76,19 +83,23 @@
             resize: vertical;
         }
 
+       
+
         .contact-form input:focus-visible,
         .contact-form textarea:focus-visible {
             outline: 3px solid #78dfff;
             outline-offset: 3px;
         }
 
+      
+
         .contact-form button {
             margin-top: 12px;
             padding: 14px 20px;
             background: #2359a6;
+            color: #ffffff;
             border: 1px solid #8de7ff;
             border-radius: 6px;
-            color: #ffffff;
             font-size: 1rem;
             font-weight: bold;
             cursor: pointer;
@@ -102,6 +113,8 @@
             outline: 3px solid #ffffff;
             outline-offset: 4px;
         }
+
+       
 
         .form-message {
             margin-top: 18px;
@@ -117,7 +130,10 @@
             color: #d5eaf4;
         }
 
+        
+
         @media (max-width: 640px) {
+
             .contact-page {
                 padding: 24px 16px;
             }
@@ -136,26 +152,36 @@
         Skip to content
     </a>
 
-<!-- WEBSITE HEADER -->
-<header class="portfolio-header">
+    
+    <header class="portfolio-header">
 
-    <div class="site-brand">
-        <img
-            src="images/portfolio-logo.png"
-            alt="Moonlit wolf and crystal logo"
-            class="site-logo"
-            width="64"
-            height="64">
+        <div class="site-brand">
 
-        <h1>My Game Developer Portfolio</h1>
-    </div>
+            <img
+                src="images/portfolio-logo.png"
+                alt="Moonlit wolf crystal emblem"
+                class="site-logo"
+                width="64"
+                height="64">
 
+            <h1>My Game Developer Portfolio</h1>
+
+        </div>
+
+      
         <nav aria-label="Main navigation">
+
             <a href="index.html">Home</a>
+
             <a href="about.html">About</a>
+
             <a href="projects.html">Projects</a>
+
             <a href="images.html">Images</a>
-            <a href="contact.html" aria-current="page">Contact</a>
+
+            <a href="contact.html"
+               aria-current="page">Contact</a>
+
         </nav>
 
     </header>
@@ -163,26 +189,35 @@
    
     <main id="main-content" class="contact-page">
 
+       
         <section class="contact-intro">
+
             <h2>Contact Me</h2>
 
             <p>
                 Thank you for visiting my game
                 development portfolio!
-                This page demonstrates an HTML contact
-                form using JavaScript validation.
             </p>
+
+            <p>
+                This page demonstrates an HTML contact
+                form with JavaScript validation.
+            </p>
+
         </section>
 
-       
+        
         <section class="contact-box"
                  aria-labelledby="form-heading">
 
-            <h3 id="form-heading">Contact Form</h3>
+            <h3 id="form-heading">
+                Contact Form
+            </h3>
 
             <form id="contactForm"
                   class="contact-form">
 
+                <!-- NAME -->
                 <label for="visitorName">
                     Your Name
                 </label>
@@ -195,6 +230,7 @@
                     maxlength="100"
                     required>
 
+                <!-- EMAIL -->
                 <label for="visitorEmail">
                     Your Email
                 </label>
@@ -207,6 +243,7 @@
                     maxlength="254"
                     required>
 
+                <!-- MESSAGE -->
                 <label for="visitorMessage">
                     Your Message
                 </label>
@@ -217,36 +254,42 @@
                     maxlength="2000"
                     required></textarea>
 
+                <!-- SUBMIT BUTTON -->
                 <button type="submit">
                     Test Form
                 </button>
 
             </form>
 
-            <p id="formResult"
-               class="form-message"
-               role="status"
-               aria-live="polite"
-               hidden></p>
+            
+            <p
+                id="formResult"
+                class="form-message"
+                role="status"
+                aria-live="polite"
+                hidden>
+            </p>
 
         </section>
 
+        
         <p class="contact-note">
-            This is a demonstration form for my
-            web development project.
+            This is a demonstration contact form
+            for my web development project.
             No information is sent or stored.
             Please do not enter sensitive information.
         </p>
 
     </main>
 
-    <!-- FOOTER -->
+    
     <footer class="portfolio-footer">
         <p>&copy; 2026 My Game Developer Portfolio</p>
     </footer>
 
     
     <script>
+
         const contactForm =
             document.getElementById("contactForm");
 
@@ -255,23 +298,34 @@
 
         contactForm.addEventListener("submit", function(event) {
 
+            // Prevent the page from reloading
             event.preventDefault();
 
+            // Check browser validation
             if (!contactForm.checkValidity()) {
+
                 contactForm.reportValidity();
                 return;
             }
 
+            // Get the entered values
             const visitorName =
-                document.getElementById("visitorName").value.trim();
+                document.getElementById("visitorName")
+                .value.trim();
 
             const visitorEmail =
-                document.getElementById("visitorEmail").value.trim();
+                document.getElementById("visitorEmail")
+                .value.trim();
 
             const visitorMessage =
-                document.getElementById("visitorMessage").value.trim();
+                document.getElementById("visitorMessage")
+                .value.trim();
 
-            if (!visitorName || !visitorEmail || !visitorMessage) {
+            // Check for empty fields
+            if (!visitorName ||
+                !visitorEmail ||
+                !visitorMessage) {
+
                 formResult.textContent =
                     "Please complete all fields.";
 
@@ -279,6 +333,7 @@
                 return;
             }
 
+            // Show a confirmation
             formResult.textContent =
                 "Thank you, " + visitorName +
                 "! Your form entries passed validation. " +
@@ -286,8 +341,11 @@
 
             formResult.hidden = false;
 
+            // Clear the form
             contactForm.reset();
+
         });
+
     </script>
 
 </body>
