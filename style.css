@@ -609,3 +609,52 @@ footer p {
         scroll-behavior: auto;
     }
 }
+
+/* Tools and Resources Section */
+
+.resources {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #173743;
+    border: 1px solid #315f73;
+    border-radius: 12px;
+}
+
+.resources h2 {
+    color: #78dfff;
+    text-align: center;
+}
+
+.resources p {
+    color: #eefaff;
+    text-align: center;
+}
+
+.resources ul {
+    max-width: 650px;
+    margin: 20px auto;
+    padding-left: 30px;
+    text-align: left;
+    line-height: 2;
+}
+
+.resources li {
+    margin-bottom: 12px;
+    color: #eefaff;
+}
+
+.resources a {
+    color: #8de7ff;
+    font-weight: bold;
+    text-underline-offset: 4px;
+}
+
+.resources a:hover {
+    color: #ffffff;
+}
+
+.resources a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+}
