@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Explore my Godot game development projects, including a magical wolf platformer, a 3D flying game, and a mini golf game.">
+          content="Explore my Godot game projects, including a magical wolf platformer, 3D flying game, and mini golf game.">
 
     <title>Projects | My Game Developer Portfolio</title>
 
@@ -14,7 +13,7 @@
     <link rel="stylesheet" href="portfolio-updates.css">
 
     <style>
-        /* Projects Page */
+        /* PROJECTS PAGE STYLING */
 
         .projects-intro {
             text-align: center;
@@ -30,6 +29,8 @@
             max-width: 700px;
             margin: 0 auto;
         }
+
+        /* THREE GAME CARDS */
 
         .project-list {
             display: grid;
@@ -69,7 +70,7 @@
             color: #8de7ff;
         }
 
-        /* Game Comparison Table */
+        /* COMPARISON TABLE */
 
         .comparison {
             margin-top: 55px;
@@ -111,7 +112,7 @@
             background: #214553;
         }
 
-        /* Asset Credits */
+        /* GAME CREDITS */
 
         .credits {
             margin-top: 50px;
@@ -125,11 +126,25 @@
             color: #78dfff;
         }
 
+        .credits h3 {
+            color: #8de7ff;
+            margin-top: 25px;
+        }
+
+        .credits h4 {
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
         .credits p {
             line-height: 1.7;
         }
 
-        /* Mobile Layout */
+        .credits a {
+            color: #8de7ff;
+        }
+
+        /* RESPONSIVE LAYOUT */
 
         @media (max-width: 850px) {
             .project-list {
@@ -148,11 +163,12 @@
 
 <body class="portfolio-update">
 
+    <!-- ACCESSIBILITY SKIP LINK -->
     <a class="skip-link" href="#main-content">
         Skip to content
     </a>
 
-    <!-- HEADER -->
+    <!-- WEBSITE HEADER -->
     <header class="portfolio-header">
 
         <h1>My Game Developer Portfolio</h1>
@@ -170,23 +186,26 @@
     <!-- MAIN CONTENT -->
     <main id="main-content" class="portfolio-main">
 
+        <!-- PAGE INTRODUCTION -->
         <section class="projects-intro">
+
             <h2>Welcome to My Projects</h2>
 
             <p>
                 These are three games I created while
                 learning game development with Godot.
-                Each project helped me develop different
+                Each project helped me practice different
                 programming and design skills.
             </p>
+
         </section>
 
-        <!-- THREE GAME PROJECTS -->
+        <!-- GAME PROJECTS -->
         <section aria-label="My game projects">
 
             <div class="project-list">
 
-                <!-- MAGIC WOLF -->
+                <!-- MAGIC WOLF GAME -->
                 <article class="project-card">
 
                     <img
@@ -194,13 +213,14 @@
                         alt="A magical purple portal inside an ancient tree surrounded by glowing crystals">
 
                     <div class="project-content">
+
                         <h3>Magic Wolf Game</h3>
 
                         <p>
-                            This is my third game and the one
-                            where I had the opportunity to
-                            create my own fantasy characters
-                            and gameplay ideas.
+                            This was my third game project
+                            and the one where I had the
+                            opportunity to develop my own
+                            fantasy characters and gameplay ideas.
                         </p>
 
                         <p>
@@ -212,73 +232,79 @@
                         </p>
 
                         <p>
-                            I practiced character animations,
-                            enemy behavior, combat mechanics,
-                            level design, and boss battles.
+                            Through this project, I practiced
+                            character animations, enemy behavior,
+                            combat mechanics, level design,
+                            and boss battles.
                         </p>
 
                         <a href="images.html">
                             View game artwork
                         </a>
+
                     </div>
                 </article>
 
-                <!-- 3D FLYING -->
+                <!-- 3D FLYING GAME -->
                 <article class="project-card">
 
                     <img
                         src="images/flying-game.png"
-                        alt="A small airplane flying through a city between tall buildings toward collectible rings">
+                        alt="A small airplane flying between tall city buildings toward collectible rings">
 
                     <div class="project-content">
+
                         <h3>3D Flying Game</h3>
 
                         <p>
-                            My second project was a 3D flying
-                            game developed as part of my
-                            learning experience.
+                            My second project was a 3D
+                            flying game developed as part
+                            of my learning experience.
                         </p>
 
                         <p>
-                            The player flies an airplane
-                            through a city, collecting rings
-                            and avoiding buildings and other
+                            Players fly an airplane through
+                            a city, collecting rings and
+                            avoiding buildings and other
                             obstacles as the speed increases.
                         </p>
 
                         <p>
                             This project helped me learn
                             about 3D movement, obstacles,
-                            procedural environments,
-                            and distance tracking.
+                            procedural environments, and
+                            distance tracking.
                         </p>
 
                         <a href="images.html">
                             View game screenshot
                         </a>
+
                     </div>
                 </article>
 
-                <!-- MINI GOLF -->
+                <!-- MINI GOLF GAME -->
                 <article class="project-card">
 
                     <img
                         src="images/golf-game.png"
-                        alt="A colorful 3D mini golf course with a white ball, aiming arrow, and shot counter">
+                        alt="A colorful 3D mini golf course with a white ball, aiming arrow, power meter, and shot counter">
 
                     <div class="project-content">
+
                         <h3>Mini Golf Game</h3>
 
                         <p>
-                            This was one of my first projects
-                            while learning game development.
+                            My Mini Golf Game was one of
+                            my first projects while learning
+                            game development.
                         </p>
 
                         <p>
-                            Players progress through
-                            different golf holes and try
-                            to get the ball into the hole
-                            using as few shots as possible.
+                            Players progress through different
+                            golf holes and try to get the
+                            ball into the hole using as
+                            few shots as possible.
                         </p>
 
                         <p>
@@ -291,13 +317,15 @@
                         <a href="images.html">
                             View game screenshot
                         </a>
+
                     </div>
                 </article>
 
             </div>
+
         </section>
 
-        <!-- HTML TABLE REQUIREMENT -->
+        <!-- HTML COMPARISON TABLE -->
         <section class="comparison"
                  aria-labelledby="comparison-heading">
 
@@ -308,6 +336,7 @@
             <div class="table-container">
 
                 <table>
+
                     <caption>
                         Overview of my three Godot game projects
                     </caption>
@@ -347,9 +376,10 @@
                 </table>
 
             </div>
+
         </section>
 
-        <!-- CREDITS -->
+        <!-- GAME CREDITS -->
         <section class="credits"
                  aria-labelledby="credits-heading">
 
@@ -358,25 +388,118 @@
             </h2>
 
             <p>
-                These projects were created as part of
-                my game development learning experience.
-                Some games followed instructional
-                materials, while others included
-                my own character designs and
-                gameplay modifications.
+                All three games were developed using
+                Godot Engine as part of my game
+                development coursework.
+                Some projects followed instructional
+                materials, while others included my
+                own original designs and gameplay features.
+            </p>
+
+            <!-- MAGIC WOLF CREDITS -->
+            <h3>Magic Wolf Game</h3>
+
+            <p>
+                My Magic Wolf Game features my original
+                wolf character, Shadow Fox enemies,
+                and Corrupted Stag boss.
+                I also worked on custom gameplay
+                features, character animations,
+                combat mechanics, and level designs.
+            </p>
+
+            <h4>Ending Music</h4>
+
+            <p>
+                Song: "19 - run, wolf warrior, run"
             </p>
 
             <p>
-                Any third-party music, sound effects,
-                artwork, or other assets will be credited
-                here with their creators and sources.
+                Artist: Arsene Dragonspiel
+            </p>
+
+            <p>
+                Source:
+                <a href="https://audio.com/arsene-dragonspiel/audio/19-run-wolf-warrior-run"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Audio.com - Original Song
+                </a>
+            </p>
+
+            <h4>Other Music &amp; Sound Effects</h4>
+
+            <p>
+                Additional music and sound effects
+                used in my Magic Wolf Game were
+                obtained from Pixabay.
+            </p>
+
+            <p>
+                Source:
+                <a href="https://pixabay.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Pixabay
+                </a>
+            </p>
+
+            <!-- 3D FLYING CREDITS -->
+            <h3>3D Flying Game</h3>
+
+            <p>
+                This project was created as part
+                of my game development coursework.
+                It helped me learn 3D movement,
+                obstacle creation, collectible rings,
+                and distance tracking.
+            </p>
+
+            <p>
+                Music and sound effects:
+                <a href="https://pixabay.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Pixabay
+                </a>
+            </p>
+
+            <!-- MINI GOLF CREDITS -->
+            <h3>Mini Golf Game</h3>
+
+            <p>
+                This game was created as an early
+                learning project to practice physics,
+                player controls, collision detection,
+                and level progression.
+            </p>
+
+            <p>
+                Music and sound effects:
+                <a href="https://pixabay.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Pixabay
+                </a>
+            </p>
+
+            <!-- DEVELOPMENT SOFTWARE -->
+            <h3>Development Software</h3>
+
+            <p>
+                All three games were developed using
+                <a href="https://godotengine.org/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Godot Engine
+                </a>.
             </p>
 
         </section>
 
     </main>
 
-    <!-- FOOTER -->
+    <!-- WEBSITE FOOTER -->
     <footer class="portfolio-footer">
         <p>&copy; 2026 My Game Developer Portfolio</p>
     </footer>
